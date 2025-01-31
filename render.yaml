@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: my-app
+    runtime: node # 🔹 إصلاح الخطأ بإضافة `runtime`
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        sync: false
