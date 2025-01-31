@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منصة بيع وشراء</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#" id="profileBtn">الصفحة الشخصية</a></li>
+        <li><a href="#" id="productsBtn">المنتجات</a></li>
+        <li><a href="#" id="addProductBtn">إضافة منتج</a></li>
+      </ul>
+    </nav>
+    <button id="logoutBtn">تسجيل الخروج</button> <!-- زر تسجيل الخروج -->
+    <h1>منصة بيع وشراء</h1>
+</header>
+
+      
+      <main>
+        <section id="profilePage" class="hidden">
+          <h2>الصفحة الشخصية</h2>
+          <p>هذا هو ملفك الشخصي.</p>
+          <div id="profileOptions">
+            <button id="accountInfoBtn">معلومات الحساب</button>
+            <button id="myProductsBtn">منتجاتي</button>
+        </div>
+        
+        <div id="accountInfo" class="hidden">
+            <h3>معلومات الحساب</h3>
+            <p><strong>الاسم الأول:</strong> <span id="profileFirstName"></span></p>
+            <p><strong>اسم العائلة:</strong> <span id="profileLastName"></span></p>
+            <p><strong>اسم المستخدم:</strong> <span id="profileUserName"></span></p>
+            <p><strong>البريد الإلكتروني:</strong> <span id="profileEmail"></span></p>
+            <p><strong>كلمه السر </strong> <span id="profilePassword"></span></p>
+        </div>
+        
+        <div id="myProducts" class="hidden">
+            <h3>منتجاتي</h3>
+            <div id="userProductsList">
+                <p id="noUserProductsMessage">لم تقم بإضافة أي منتجات بعد.</p>
+            </div>
+        </div>
+        
+        </section>
+      
+        <section id="productsPage" class="hidden">
+          <h2>المنتجات</h2>
+          <div id="allProducts">
+            <p id="noProductsMessage">لا توجد منتجات حتى الآن.</p>
+          </div>
+        </section>
+      
+        <section id="addProductPage" class="hidden">
+          <form class="add-product-form" id="addProductForm">
+            <h2>إضافة منتج جديد</h2>
+            <label for="productName">اسم المنتج</label>
+            <input type="text" id="productName" placeholder="مثال: هاتف ذكي" required>
+            
+            <label for="productDescription">وصف المنتج</label>
+            <input type="text" id="productDescription" placeholder="مثال: هاتف بحالة ممتازة" required>
+            
+            <label for="productPrice">سعر المنتج</label>
+            <input type="number" id="productPrice" placeholder="السعر بالريال" required>
+            
+<div id="imageUploadContainer">
+  <label for="productImage1">رفع صورة 1</label>
+  <input type="file" id="productImage1" accept="image/*">
+  
+  <label for="productImage2">رفع صورة 2</label>
+  <input type="file" id="productImage2" accept="image/*">
+  
+  <label for="productImage3">رفع صورة 3</label>
+  <input type="file" id="productImage3" accept="image/*">
+  
+  <label for="productImage4">رفع صورة 4</label>
+  <input type="file" id="productImage4" accept="image/*">
+  
+  <label for="productImage5">رفع صورة 5</label>
+  <input type="file" id="productImage5" accept="image/*">
+</div>
+
+            
+            <button type="submit">إضافة المنتج</button>
+          </form>
+        </section>
+        
+        
+      </main>
+
+<script src="sell.js"></script>
+
+</body>
+</html>

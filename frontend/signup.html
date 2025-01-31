@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+    <div class="auth-container">
+        <h2>إنشاء حساب</h2>
+        <form id="signupForm">
+            <label for="firstName">الاسم الأول</label>
+            <input type="text" id="firstName" placeholder="أدخل اسمك الأول" required>
+
+            <label for="lastName">اسم العائلة</label>
+            <input type="text" id="lastName" placeholder="أدخل اسم العائلة" required>
+
+            <label for="username">اسم المستخدم</label>
+            <input type="text" id="username" placeholder="أدخل اسم المستخدم" required>
+
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+
+            <label for="password">كلمة المرور</label>
+            <input type="password" id="password" placeholder="أدخل كلمة المرور" required>
+
+            <button type="submit">إنشاء حساب</button>
+        </form>
+
+        <p>لديك حساب بالفعل؟ <a href="index.html">تسجيل الدخول</a></p>
+    </div>
+
+    <script src="auth.js"></script>
+
+</body>
+</html>

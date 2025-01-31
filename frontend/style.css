@@ -1,0 +1,297 @@
+body {
+  font-family: 'Tajawal', sans-serif;
+  direction: rtl;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f4f9fc, #ddeaf4);
+  color: #333;
+}
+
+
+header {
+  background: linear-gradient(90deg, #007BFF, #00d4ff);
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-bottom: 5px solid #00c2ff;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 2px;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+
+  .navbar li {
+    margin: 0;
+  }
+
+  .navbar a {
+    color: #007BFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    margin: 0 10px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar a:hover {
+    background: #007BFF;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  main {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .product {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .product h3 {
+    color: #007BFF;
+    font-size: 1.8rem;
+  }
+  
+  .product button {
+    background: linear-gradient(90deg, #28a745, #20c997);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .product button:hover {
+    background: #28a745;
+    transform: scale(1.1);
+  }
+  
+  .add-product-form {
+    padding: 40px;
+    border-radius: 20px;
+    background: #f8f9fa;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .add-product-form h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .add-product-form input, .add-product-form button {
+    padding: 15px;
+    margin: 15px 0;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+  }
+  
+
+  .add-product-form input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .add-product-form button {
+    background: linear-gradient(90deg, #007BFF, #00d4ff);
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  .add-product-form button:hover {
+    background: #007BFF;
+    transform: translateY(-5px);
+  }
+
+  #noProductsMessage {
+    text-align: center;
+    color: #6c757d;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  #imageUploadContainer input[type="file"] {
+    display: none; /* إخفاء الزر الافتراضي */
+  }
+  
+  #imageUploadContainer label {
+    display: inline-block;
+    background: linear-gradient(90deg, #007BFF, #00d4ff);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    margin: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  #imageUploadContainer label:hover {
+    background: #007BFF;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+  .delete-btn {
+    background: none;
+    border: none;
+    color: #dc3545;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    color: #ff0000;
+    transform: scale(1.2);
+    
+  }
+  .product button.purchase-btn {
+    background: linear-gradient(90deg, #007BFF, #0056b3); /* أزرق */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .product button.purchase-btn:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  .product button.delete-btn {
+    background: linear-gradient(90deg, #dc3545, #a71d2a); /* أحمر */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .product button.delete-btn:hover {
+    background: #a71d2a;
+    transform: scale(1.1);
+  }
+  #logoutBtn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(90deg, #dc3545, #a71d2a);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  #logoutBtn:hover {
+    background: #a71d2a;
+    transform: scale(1.1);
+  }
+  #profileOptions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#profileOptions button {
+    background: linear-gradient(90deg, #007BFF, #00d4ff);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#profileOptions button:hover {
+    background: #007BFF;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#accountInfo, #myProducts {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+#accountInfo h3, #myProducts h3 {
+    font-size: 1.8rem;
+    color: #007BFF;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#accountInfo p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f4f9fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#myProducts .product {
+    margin: 15px 0;
+}
+
+#noUserProductsMessage {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-top: 20px;
+}

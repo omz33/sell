@@ -1,0 +1,76 @@
+body {
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+    text-align: right;
+    background: linear-gradient(to bottom, #f4f9fc, #ddeaf4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.auth-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+.auth-container h2 {
+    color: #007BFF;
+    font-size: 1.8rem;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-container input {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.auth-container input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container button {
+    background: linear-gradient(90deg, #007BFF, #00d4ff);
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.auth-container button:hover {
+    background: #007BFF;
+    transform: translateY(-3px);
+}
+
+.auth-container p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.auth-container a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
+ 
